@@ -22,6 +22,16 @@ public class Demo {
 		doc4.printDocument();
 		doc4.addLine("Drei");
 		doc4.printDocument();
+		
+		System.out.println("--------------------------------------------------");
+		
+		PrintManager MyPrint = new PrintManager();
+		MyPrint.aaDocument(doc1);
+		MyPrint.aaDocument(doc2);
+		MyPrint.aaDocument(doc3);
+		MyPrint.aaDocument(doc4);
+		
+		MyPrint.printAll();
 	}
 
 }
